@@ -1,0 +1,22 @@
+{
+  "name": "tzproj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gurin-Andrew/DZinFigma.git"
+  },
+  "author": "Andrew -[\"gurinos68@gmail.com\"]",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gurin-Andrew/DZinFigma/issues"
+  },
+  "homepage": "https://github.com/Gurin-Andrew/DZinFigma#readme",
+  "dependencies": {
+    "webpack": "^5.8.0"
+  }
+}
