@@ -65,6 +65,7 @@ module.exports= {
                     {
                        loader: MiniCssExtractPlugin.loader,
                        options:{
+                        publicPath: path.resolve(__dirname, 'dist') 
                        }
                    },
                    'css-loader']
@@ -74,8 +75,8 @@ module.exports= {
                use :['file-loader']
            },
            {
-               test: /\.(ttf|woff|woff2|eot)$/, //Обработчик шрифтов
-               use: ['file loader']
+               test: /\.(ttf|woff|woff2|eot)$/,//Обработчик шрифтов
+               use: ['file-loader']
            }
 
        ]
@@ -83,7 +84,7 @@ module.exports= {
    resolve:{
        extensions: ['.js', '.json', '.png',] ,// Можно не указывать расширения файлов
        alias:{
-           '@models':path.resolve(__dirname,'src/models'), // Для упрощения перемещения по часто используемым директориям   синтаксис import Name from '@models/...'
+         // Для упрощения перемещения по часто используемым директориям   синтаксис import Name from '@models/...'
            '@': path.resolve(__dirname,'src')
        }
    },
